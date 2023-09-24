@@ -53,7 +53,7 @@ async def stats(_, message, edit_mode=False):
     mem_p       = memory.percent
     swap        = swap_memory()
 
-    bot_stats = f'<b><i><u>Zee Bot Statistics</u></i></b>\n\n'\
+    bot_stats = f'<b><i><u>𝔭𝔦𝔡 Bot Statistics</u></i></b>\n\n'\
                 f'<code>CPU  : {get_progress_bar_string(cpuUsage)}</code> {cpuUsage}%\n' \
                 f'<code>RAM  : {get_progress_bar_string(mem_p)}</code> {mem_p}%\n' \
                 f'<code>SWAP : {get_progress_bar_string(swap.percent)}</code> {swap.percent}%\n' \
@@ -63,7 +63,7 @@ async def stats(_, message, edit_mode=False):
                 f'<code>Downloaded      : </code> {recv}\n' \
                 f'<code>Total Bandwidth : </code> {tb}'
 
-    sys_stats = f'<b><i><u>Zee System Statistics</u></i></b>\n\n'\
+    sys_stats = f'<b><i><u>𝔭𝔦𝔡 System Statistics</u></i></b>\n\n'\
                 f'<b>System Uptime:</b> <code>{sysTime}</code>\n' \
                 f'<b>CPU:</b> {get_progress_bar_string(cpuUsage)}<code> {cpuUsage}%</code>\n' \
                 f'<b>CPU Total Core(s):</b> <code>{cpu_count(logical=True)}</code>\n' \
@@ -150,7 +150,7 @@ async def send_bot_limits(_, query):
     UMT = 'Unlimited' if config_dict['USER_MAX_TASKS']  == '' else config_dict['USER_MAX_TASKS']
     BMT = 'Unlimited' if config_dict['QUEUE_ALL']       == '' else config_dict['QUEUE_ALL']
 
-    bot_limit = f'<b><i><u>Zee Bot Limitations</u></i></b>\n' \
+    bot_limit = f'<b><i><u>𝔭𝔦𝔡 Bot Limitations</u></i></b>\n' \
                 f'<code>Torrent   : {TOR}</code> <b>GB</b>\n' \
                 f'<code>G-Drive   : {GDL}</code> <b>GB</b>\n' \
                 f'<code>Yt-Dlp    : {YTD}</code> <b>GB</b>\n' \
@@ -207,10 +207,10 @@ async def start(_, message):
     elif config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Bot Started.\n' \
                        'Now I will send all of your stuffs here.\n' \
-                       'Use me at: @Z_Mirror'
+                       'Use me at: @panimeid'
     elif not config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Sorry, you cannot use me here!\n' \
-                       'Join: @Z_Mirror to use me.\n' \
+                       'Join: @panimeid to use me.\n' \
                        'Thank You'
     else:
         tag = message.from_user.mention
@@ -243,7 +243,7 @@ async def ping(_, message):
     await editMessage(reply, f'{ping_time} ms')
 
 async def log(_, message):
-    await sendFile(message, 'Z_Logs.txt')
+    await sendFile(message, 'pid_logs.txt')
 
 help_string = f'''
 <b>NOTE: Click on any CMD to see more detalis.</b>

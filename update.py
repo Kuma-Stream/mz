@@ -4,12 +4,12 @@ from subprocess import run as srun
 from dotenv import load_dotenv
 from pymongo import MongoClient
 
-if ospath.exists('Z_Logs.txt'):
-    with open('Z_Logs.txt', 'r+') as f:
+if ospath.exists('pid_logs.txt'):
+    with open('pid_logs.txt', 'r+') as f:
         f.truncate(0)
 
 basicConfig(format='%(levelname)s | From %(name)s -> %(module)s line no: %(lineno)d | %(message)s',
-                    handlers=[FileHandler('Z_Logs.txt'), StreamHandler()], level=INFO)
+                    handlers=[FileHandler('pid_logs.txt'), StreamHandler()], level=INFO)
 
 load_dotenv('config.env', override=True)
 
@@ -65,7 +65,7 @@ if UPSTREAM_REPO:
         log_info('Successfully updated with latest commit.')
         log_info(f'Repo in use: {UPSTREAM_REPO}')
         log_info(f'Branch in use: {UPSTREAM_BRANCH}')
-        log_info('Thanks For Using Z_Mirror')
+        log_info('Thanks For Using Sina')
     else:
         log_error('Something went wrong while updating.')
         log_info('Check if entered UPSTREAM_REPO is valid or not!')

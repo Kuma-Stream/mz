@@ -384,13 +384,13 @@ sudo dockerd
 - Build Docker image:
 
 ```
-sudo docker build . -t z_mirror
+sudo docker build . -t panimeid
 ```
 
 - Run the image:
 
 ```
-sudo docker run -p 80:80 -p 8080:8080 z_mirror
+sudo docker run -p 80:80 -p 8080:8080 panimeid
 ```
 
 - To stop the running image:
@@ -746,8 +746,8 @@ button_name button_url
 ```
 Example:
 ```
-Owner https://telegram.me/z_mirror
-Updates https://telegram.me/z_mirror
+Owner https://telegram.me/panimeid
+Updates https://telegram.me/panimeid
 ```
 - **Note**: If you want to add space in button name use `_` for add space
 
