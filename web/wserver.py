@@ -61,7 +61,7 @@ rawindexpage = '''
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torrent File Selector</title>
-    <link rel="icon" href="https://graph.org/file/43af672249c94053356c7.jpg" type="image/jpg">
+    <link rel="icon" href="https://telegra.ph/file/dfeca3a594a49e4d7ad7b.png" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -82,7 +82,7 @@ rawindexpage = '''
     <!--© Designed and coded by @bipuldey19-Telegram-->
     <header>
         <div class="brand">
-            <img src="https://graph.org/file/43af672249c94053356c7.jpg" alt="logo" />
+            <img src="https://telegra.ph/file/dfeca3a594a49e4d7ad7b.png" alt="logo" />
         </div>
         <h2 class="name">Qbittorrent Selection</h2>
         <div class="social">
